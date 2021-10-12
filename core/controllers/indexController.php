@@ -1,3 +1,5 @@
 <?php
-echo"teste";
+
+include('html/index/index.php');
+
 ?>
