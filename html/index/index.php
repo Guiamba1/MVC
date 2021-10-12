@@ -1,10 +1,15 @@
 
 <?php
-include('html/template/header.php');
+include('html/tamplate/header.php');
 ?>
 
 <body>
 
+
+<?php
+include('html/tamplate/topnav.php');
+
+?>
 
 <section class="mbr-section mbr-after-navbar" id="content1-10">
     <div class="mbr-section__container container mbr-section__container--isolated">
@@ -65,11 +70,4 @@ include('html/template/header.php');
 
 
 
-  <script src="views/web/assets/jquery/jquery.min.js"></script>
-  <script src="views/bootstrap/js/bootstrap.min.js"></script>
-  <script src="views/smooth-scroll/SmoothScroll.js"></script>
-  <script src="views/jarallax/jarallax.js"></script>
-  <script src="views/mobirise/js/script.js"></script>
-
-</body>
-</html>
+  <?php include('html/tamplate/footer.php'); ?>
