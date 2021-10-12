@@ -1,12 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-</head>
-<body>
-    <p>Ola Mundo</p>
-</body>
-</html>
+<?php
+
+if (isset($_GET['view'])){
+    if(file_exists('core/controllers/'.strtolower($_GET['view']).'Controller.php')){
+        include('core/controllers/'.strtolower($_GET['view']).'Controller.php');
+    }
+    else{
+        include('core/controllers/erroController.php');
+    }
+
+    
+
+}
+else{
+    include('core/controllers/indexController.php');
+}
+
+?>
