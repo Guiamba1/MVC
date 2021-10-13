@@ -15,5 +15,5 @@
   <link rel="stylesheet" href="views/mobirise/css/mbr-additional.css" type="text/css">
   <link rel="stylesheet" href="views/fontawesome/css/font.css" type="text/css">
 
-  <title>Oscar guimba</title>
+  <title><?php echo APP_TITULO; ?></title>
 </head>

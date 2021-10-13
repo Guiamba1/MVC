@@ -1,13 +1,13 @@
 
 <?php
-include('html/tamplate/header.php');
+include(HTML_DIR.'tamplate/header.php');
 ?>
 
 <body>
 
 
 <?php
-include('html/tamplate/topnav.php');
+include(HTML_DIR.'tamplate/topnav.php');
 
 ?>
 
@@ -70,4 +70,4 @@ include('html/tamplate/topnav.php');
 
 
 
-  <?php include('html/tamplate/footer.php'); ?>
+  <?php include(HTML_DIR.'tamplate/footer.php'); ?>
