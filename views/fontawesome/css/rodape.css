@@ -1,0 +1,70 @@
+/*================== Rodape animado====================*/
+
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 150px;
+   
+    display: flex;
+    min-height: 100px;
+    padding: 20px 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    
+}
+
+footer .onda{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+   /*  background: url("view/images/wave.png");*/
+  background:url("views/images/guiamba.png") !important;
+  background: url("");
+  
+  background-size: 1000px 100px;
+}
+
+.onda#onda1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animarOnda1 4s linear infinite;
+}
+/*================================================*/
+.onda#onda2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animarOnda2 4s linear infinite;
+}
+/*================================================*/
+.onda#onda3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15;
+    animation: animarOnda1 3s linear infinite;
+}
+/*================================================*/
+.onda#onda4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20;
+    animation: animarOnda2 3s linear infinite;
+}
+
+/*================================================*/
+@keyframes animarOnda1{
+    0%{
+        background-position-x: 1000px;
+    }
+
+    100%{
+        background-position-x: 0px;
+    }
+}
+
+/*================================================*/
